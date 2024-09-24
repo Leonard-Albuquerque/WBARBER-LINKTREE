@@ -6,8 +6,6 @@ O Linktree é uma plataforma de social-linking e redes sociais que opera num mod
 
 E como há muita limitação no modelo FREE do Link-Tree, decidi criar um personalizável e usual para  a barbearia que eu frequento.   
 
--Agradecimentos à 
-
 ## :woman_technologist: Tecnologias e ferramentas utilizadas
 
 - HTML
