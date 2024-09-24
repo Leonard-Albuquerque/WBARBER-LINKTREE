@@ -22,22 +22,8 @@ E como há muita limitação no modelo FREE do Link-Tree, decidi criar um person
 ## :gear: Demonstração
 
 **Deploy da Aplicação:**
+https://wbarber-linktree.vercel.app/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Meus sinceros agradecimentos à : Copyright (c) 2021 Sthefany Albuquerque por um modelo de código excepcional.
 
 
 
