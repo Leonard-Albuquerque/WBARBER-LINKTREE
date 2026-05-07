@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap');
+
 :root {
   --main-color: #7A3695;
-  --bg:  #2F2D30; 
-  --text-color: #F9EEFD; 
+  --bg: #2F2D30;
+  --text-color: #F9EEFD;
 }
 
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Encode Sans SC', sans-serif;
 }
 
@@ -19,26 +20,26 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
   background-color: var(--bg);
 }
 
 img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 2.5rem;
-    border: 3px solid var(--main-color);
-    box-shadow: 0px 0px 50px rgb(122, 54, 149);
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  /* border: 3px solid var(--main-color); */
+  /* box-shadow: 0px 0px 50px rgb(122, 54, 149); */
 }
 
 header h1 {
@@ -76,11 +77,11 @@ a svg.icons-btn {
   text-decoration: none;
   text-transform: uppercase;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -101,7 +102,7 @@ a svg.icons-btn {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background-color: var(--main-color);
@@ -114,7 +115,7 @@ a svg.icons-btn {
   width: 110%;
   height: 0;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
-          transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .btn-animation:hover:before {
@@ -126,11 +127,11 @@ a svg.icons-btn {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 10px;
 }
 
@@ -164,14 +165,14 @@ label::after {
   transition: 0.3s;
 }
 
-input:checked + label {
+input:checked+label {
   background-color: var(--text-color);
 }
 
-input:checked + label::after {
+input:checked+label::after {
   left: calc(100% - 5px);
   -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 label:active:after {

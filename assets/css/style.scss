@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap');
+
 :root {
-  --main-color: #7A3695;
-  --bg:  #2F2D30; 
-  --text-color: #F9EEFD; 
+    --main-color: #7A3695;
+    --bg: #2F2D30;
+    --text-color: #F9EEFD;
 }
 
 
@@ -26,8 +27,8 @@ body {
 }
 
 header img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
@@ -111,8 +112,8 @@ a svg.icons-btn {
         transform: translate(-50%, -50%) rotate(45deg);
     }
 
-    &:hover{
-        &:before{
+    &:hover {
+        &:before {
             height: 450%;
         }
     }
@@ -126,7 +127,7 @@ a svg.icons-btn {
 }
 
 
-input[type=checkbox]{
+input[type=checkbox] {
     height: 0;
     width: 0;
     visibility: hidden;
@@ -155,11 +156,11 @@ label {
     }
 }
 
-input:checked + label {
+input:checked+label {
     background-color: var(--text-color);
 }
 
-input:checked + label::after {
+input:checked+label::after {
     left: calc(100% - 5px);
     transform: translateX(-100%);
 }
