@@ -21,7 +21,8 @@ body {
     align-items: center;
 
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 24px 16px;
 
     background-color: var(--bg);
 }
@@ -105,6 +106,28 @@ a svg.icons-btn {
     }
 }
 
+.redirect .btn:first-child {
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    box-shadow: 0 0 26px rgba(122, 54, 149, 0.65);
+    transform: scale(1.04);
+
+    &:before {
+        background-color: var(--text-color);
+    }
+
+    &:hover {
+        color: var(--bg);
+    }
+}
+
+.redirect>.btn:not(:first-child) {
+    width: 280px;
+    margin: 18px auto;
+    padding: 13px 22px;
+    font-size: 13px;
+}
+
 .btn-animation {
     &:before {
         width: 110%;
@@ -119,11 +142,68 @@ a svg.icons-btn {
     }
 }
 
+.barbers {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.barbers h2 {
+    margin: 14px 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--text-color);
+}
+
+.barber-btn {
+    justify-content: flex-start;
+    height: 58px;
+    width: 280px;
+    margin: 12px auto;
+    padding: 0 70px 0 24px;
+    overflow: hidden;
+    border-radius: 999px;
+    font-size: 13px;
+}
+
+.barber-btn span {
+    display: block;
+    padding-right: 0;
+}
+
+.barber-avatar {
+    flex-shrink: 0;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: -5px;
+    width: 58px;
+    height: 58px;
+    margin: 0;
+    border: 5px solid var(--text-color);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    object-fit: cover;
+    background-color: var(--bg);
+    box-shadow: 0 0 0 6px var(--bg);
+}
+
 .toggle {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    margin-top: 0;
+    padding: 8px;
+    border: 1px solid var(--text-color);
+    border-radius: 999px;
+    background-color: var(--bg);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
 }
 
 
